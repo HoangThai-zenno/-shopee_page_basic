@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.4-web/css/all.css">
     <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/cc49f43f69.css" crossorigin="anonymous"> -->
     <script src="https://kit.fontawesome.com/cc49f43f69.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./asset/img/logoTlee-shop.png" type="image/gif" sizes="16x16">
@@ -163,7 +164,17 @@
                         </button>
                     </div>
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="./asset/img/empty-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
