@@ -94,11 +94,11 @@ html{
     border-radius: 2px;
     font-size: 1.5rem;
     padding: 0 12px;
-    background-color: transparent;   
     cursor: pointer; 
     outline: none;
+    background-color: var(--white-color);
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -123,4 +123,50 @@ html{
 }
 .auth-form__socials-title{
     margin:0 36px;
+}
+
+.select-input{
+    height: 34px;
+    padding: 0 12px;
+    background-color: var(--white-color);
+    min-width: 200px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+.select-input__label{
+    font-size: 1.4rem;
+}
+.select-input__icon{
+    font-size: 1.4rem;
+    color: #4A4A4A;
+    position: relative;
+    top: 2px;
+}
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 10px 16px;
+    display: none;
+}
+.select-input__link{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+.select-input__link:hover{
+    color: var(--primary-color);
+}
+.select-input:hover .select-input__list{
+    display: block;
 }
