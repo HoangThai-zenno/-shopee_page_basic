@@ -162,6 +162,7 @@ html{
     list-style: none;
     padding: 10px 16px;
     display: none;
+    z-index: 1;
 }
 .select-input__link{
     font-size: 1.4rem;
@@ -176,3 +177,33 @@ html{
 .select-input:hover .select-input__list{
     display: block;
 }
+.pagination {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.pagination-item__active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination-item__active .pagination-item__link:hover{
+    background-color: #ed5c3f;
+}
+.pagination-item {
+    list-style: none;
+    margin: 0 12px;
+}
+.pagination-item__link {
+    --height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    line-height: var(--height);
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+
+}
+.pagination-item__icon {}
